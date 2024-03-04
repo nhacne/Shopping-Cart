@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="css/styleforfooter.css">
+    <link rel="stylesheet" href="css/ShoppingCart.css">
+    <link rel="stylesheet" href="css/ProductStyles.css">
+    <link rel="stylesheet" href="css/styleforheader.css">
+
+
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        body {
+    margin: 0px;
+}
+
+
+
+        .box11 {
+            display: -webkit-inline-box;
+        }
+
+        .box11 > p > a > img {
+            padding-right: 4px;
+        }
+
+
+        .box {
+            width: 150px;
+            margin-right: 90px;
+            /* background-color: rgb(244, 240, 235); */
+        }
+        .active-menu {
+          border-bottom: 1px solid black;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+
+    </style>
+
+    <title>Shopping Cart</title> 
+
+
+
+<body>
+
+    <div class="topnav">
+      <a href="logo"><img src="https://cdn.discordapp.com/attachments/1188672500792573958/1214025823498272809/Untitled6_20240304084104.png?ex=65f79ca7&is=65e527a7&hm=0b7106debd94d2033bee7684be1e9611e034230f1b808d63d773cf136de109a2&"
+        width="65" height="47"></a>
+        <a class="active" href="indexHome.html">Home</a>
+        <a href="#products">Products</a>
+        <a href="indexAbout.html">About</a>
+        <a href="indexContact.html">Contact</a>
+      <div class="search-container">
+        <form action="/action_page.php">
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+    </div>
+    
+<div class="body-shopping-cart">
+
+    <div class="shopping-cart">
+        <!-- Title -->
+        <div class="title">
+          Shopping Bag
+        </div>
+       
+        <!-- Product #1 -->
+        <div class="item">
+          <div class="image">
+            <img src="https://cdn-tp4.mozu.com/27977-44902/cms/44902/files/349ea75c-72f5-4b4f-b8ed-e101b1ac660b?maxWidth=320_mzCb=_1708635344039"
+                 alt="calendar-image" />
+          </div>
+       
+          <div class="description">
+            <span>Name</span>
+            <span>price $</span>
+          </div>
+       
+          <div class = "purchase-info">
+            <input type = "number" min = "0" value = "1">
+          </div>
+       
+          <div class="total-price">$0</div>
+        </div>
+       
+        <!-- Product #2 -->
+        <div class="item">
+            <div class="image">
+                <img src="https://cdn-tp4.mozu.com/27977-44902/cms/44902/files/349ea75c-72f5-4b4f-b8ed-e101b1ac660b?maxWidth=320_mzCb=_1708635344039"
+                     alt="calendar-image" />
+              </div>
+          <div class="description">
+            <span>Name</span>
+            <span>price $</span>
+          </div>
+       
+          <div class = "purchase-info">
+            <input type = "number" min = "0" value = "1">
+          </div>
+       
+          <div class="total-price">$0</div>
+        </div>
+       
+        <!-- Product #3 -->
+        <div class="item">
+            <div class="image">
+                <img src="https://cdn-tp4.mozu.com/27977-44902/cms/44902/files/349ea75c-72f5-4b4f-b8ed-e101b1ac660b?maxWidth=320_mzCb=_1708635344039"
+                     alt="calendar-image" />
+              </div>
+              
+       
+          <div class="description">
+            <span>Name</span>
+            <span>price $</span>
+          </div>
+       
+          <div class = "purchase-info">
+            <input type = "number" min = "0" value = "1">
+          </div>
+       
+          <div class="total-price">$0</div>
+        </div>
+      </div>
+      
+<!-- ------------------------- -->
+
+      <div class=" Order-Information ">
+        <!-- Title -->
+        <div class="title">
+          Order Information
+        </div>
+       
+
+        <div class="item">
+          <div class="Total-Funds" style="display: flex; color: #5e6977d5; margin: 20px 0px 20px 0px; ">
+              <h4 style="font-family:Arial, Helvetica, sans-serif;">Total-Funds :</h4>
+              <p class="SUM" style="padding-left: 60px;color: red;">$0</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="note" style="color: #5e6977d5;">
+            <li>Shipping will be charged at checkout.</li>
+            <li>You can also enter your discount code at checkout.</li>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="pay">
+              <button type = "button" class = "btn" style="width: 223.3px; height: 48px; margin: 0px 0px 0px 50px;">
+                <h2 style="color: rgb(81, 120, 153);">Pay <i class = "fas fa-shopping-cart"></i></h2>
+              </button>
+          </div>
+        </div>
+
+
+       
+
+          
+        
+
+      </div>
+
+
+
+
+</div>
+
+
+      
+
+<hr/>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>	
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>online shop</h4>
+                    <ul>
+                        <li><a href="#">calendars</a></li>
+                        <li><a href="#">diary</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="facebook.com"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+    
+</body>
